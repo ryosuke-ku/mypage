@@ -1,14 +1,12 @@
 language: node_js
-
 node_js:
-  - "12.16.1"
-
+  - "10"
 script:
-  - echo "Deploy"
-  - echo $FIREBASE_TOKEN
-
-install:
-  - npm install -g firebase-tools
-
-after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+  - npm --prefix "./functions" install
+  - npm --prefix "./functions" run lint
+  - npm --prefix "./functions" run build
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  token:
+    secure: $FIREBASE_TOKEN
