@@ -11,8 +11,8 @@ install:
   - npm install -g firebase-tools
 
 deploy:
-  provider: firebase
-  skip_cleanup: true
-  token:
-    secure: $FIREBASE_TOKEN
-  project: $FIREBASE_PROJECT
+  # provider: firebase
+  # skip_cleanup: true
+  token: $FIREBASE_TOKEN
+    # secure: $FIREBASE_TOKEN
+  # project: $FIREBASE_PROJECT
