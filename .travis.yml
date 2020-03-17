@@ -15,4 +15,4 @@ deploy:
   # skip_cleanup: true
   token: $FIREBASE_TOKEN
     # secure: $FIREBASE_TOKEN
-  # project: $FIREBASE_PROJECT
+  project: $FIREBASE_PROJECT
