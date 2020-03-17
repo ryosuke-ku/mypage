@@ -1,0 +1,29 @@
+  /* === ラジオボタンは非表示 ================== */
+ #sample1 input[type="radio"]{
+   display    : none;
+ }
+  
+  /* === 各ラジオボタンのラベルをボタンに変更 == */
+ #sample1 label{
+   display    : inline-block;
+   border     : 1px solid #ccc;
+   box-shadow : 2px 2px #999;
+   padding    : 2px 6px;
+ }
+  
+  /* === 選択されている言語のラベル色を変更 ==== */
+ #sample1 input[type="radio"]:checked + label {
+   background : #ffa64d;
+ }
+
+ [class^="img-flex-"] {
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.img-flex-2 img { width: 49%; }
+.img-flex-3 img { width: 32%; }
+.img-flex-4 img { width: 24%; } 

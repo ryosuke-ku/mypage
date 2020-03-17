@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/test.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+
+<body>
+    <div id="sample1">
+        <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked>
+        <label for="sJa">
+          <span class="langCng" lang="ja">日本語</span>
+          <span class="langCng" lang="en">Japanese</span>
+          <!-- <span class="langCng" lang="zh">日本</span> -->
+        </label>
+       
+        <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+        <label for="sEn">
+          <span class="langCng" lang="ja">英語</span>
+          <span class="langCng" lang="en">English</span>
+          <!-- <span class="langCng" lang="zh">英语</span> -->
+        </label>
+       
+        <!-- <input type="radio" name="langKbn" id="sZh" onClick="langSet('zh')">
+        <label for="sZh">
+          <span class="langCng" lang="ja">中国語</span>
+          <span class="langCng" lang="en">Chinese</span>
+          <span class="langCng" lang="zh">中文</span>
+        </label>
+        -->
+        <div>
+          <p class="langCng" lang="ja">言語の切り替えはCSSのセレクタを使用します。</p>
+          <p class="langCng" lang="en">Language switching uses CSS selector.</p>
+          <!-- <p class="langCng" lang="zh">语言切换使用CSS选择器。</p> -->
+       
+          <p class="langCng" lang="ja">サンプルは日本語と英語の切り替えを行っています。</p>
+          <p class="langCng" lang="en">The sample is switching between Japanese and English.</p>
+          <!-- <p class="langCng" lang="zh">样本正在日语和英语之间切换。</p> -->
+        </div>
+      </div>
+
+      <div class="img-flex-4">
+        <img src="../public/focus/images/photo2.jpg" alt="">
+        <img src="../public/focus/images/photo3.jpg" alt="">
+        <img src="../public/focus/images/photo4.jpg" alt="">
+        <img src="../public/focus/images/photo5.jpg" alt="">
+      </div>
+
+      <div class="flex-col2">
+        <div class="flex-child">
+          <img src="../public/focus/images/photo7.jpg" alt="">
+        </div>
+        <div class="flex-child">
+          <img src="../public/focus/images/photo8.jpg" alt="">
+        </div>
+      </div>
+
+</body>
+</html>
